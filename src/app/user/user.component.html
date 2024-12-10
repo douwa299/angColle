@@ -1,0 +1,28 @@
+<h1 class="display-6">Page 1 </h1>
+<p>user works!</p>
+<p><b>Name:</b>{{name}}</p>
+<p><b>Location:</b>{{location}}</p>
+<p><b>Status:</b>{{getstatus()}}</p>
+
+<button type="button" class="btn btn-danger" (click)="getmsg()">Save</button>
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card">
+        <div class="card-header text-center">
+            Two way binding
+        </div>
+        <div class="card-body">
+            <input type="text" class="form-control"  [(ngModel)]="Message">
+        </div>
+    
+        </div>
+        
+    </div>
+</div>
+<div class="row d-flex justify-content-center">
+    <button type="button"  class="btn btn-link" (click)="goToregister()" >Go To Register</button>
+</div>
+
+<p><b>Welcome :</b><span class="text-danger">{{Message}}</span> ! </p>
+<p [textContent]=nomutilisateur> </p>
